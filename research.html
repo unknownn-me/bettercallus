@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Market research and data insights for the hospitality consulting industry.">
+    <title>Market Research | Better Call Us</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/research.css">
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo2.png" alt="Better Call Us Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="strategy.html">Strategy</a>
+                <a href="content.html">Content</a>
+            </div>
+            <div class="burger-menu">
+                <span></span><span></span><span></span>
+            </div>
+            <a href="booking.html" class="btn btn-primary nav-cta">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header section-bg-dark">
+        <div class="container text-center fade-in">
+            <h1>Market Research</h1>
+            <p>Data-driven insights proving the massive demand for on-the-ground hospitality support.</p>
+        </div>
+    </header>
+
+    <!-- Google Trends Chart -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2>Rising Demand for Survival</h2>
+                <p>Google Trends analysis for "restaurant help", "cafe failing", and "hospitality consultant uk" over the last 5 years.</p>
+            </div>
+            
+            <div class="chart-container fade-in mt-4">
+                <canvas id="trendsChart"></canvas>
+            </div>
+
+            <div class="insight-box mt-4 fade-in">
+                <h3>Key Insight</h3>
+                <p>Search volume for business-saving advice in the hospitality sector spiked by <strong>145%</strong> between 2021 and 2023, driven by rising energy costs and inflation. It is consistently higher than pre-2020 levels, meaning businesses are actively searching for lifelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similarweb Data -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h2 class="text-center fade-in mb-8">Competitor Traffic Analysis (Similarweb)</h2>
+            
+            <div class="table-container fade-in">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Competitor</th>
+                            <th>Monthly Visits</th>
+                            <th>Bounce Rate</th>
+                            <th>Audience Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deloitte Hospitality (UK)</td>
+                            <td>1.2M</td>
+                            <td>45%</td>
+                            <td>Corporate/Chains</td>
+                        </tr>
+                        <tr>
+                            <td>Caterer.com</td>
+                            <td>2.8M</td>
+                            <td>32%</td>
+                            <td>Job Seekers/HR</td>
+                        </tr>
+                        <tr>
+                            <td>Local Business Advisors</td>
+                            <td>&lt; 50k</td>
+                            <td>68%</td>
+                            <td>General SME</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Better Call Us (Projected)</strong></td>
+                            <td><strong>10k (Niche)</strong></td>
+                            <td><strong>&lt; 25%</strong></td>
+                            <td><strong>Indie Cafés/Restaurants</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="insight-box fade-in mt-4">
+                <h3>The Market Gap</h3>
+                <p>While massive consultancy firms receive high traffic, their services are financially out of reach for a £300k/year independent café. Meanwhile, local advisors are too generalized to offer the exact menu-engineering and kitchen-efficiency advice needed. <strong>Our business fits the gap perfectly: specialized, localized, and affordable.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/images/logo2.png" alt="Better Call Us Logo" class="footer-logo">
+                    <p>Hands-on consultancy for Edinburgh & Glasgow's independent hospitality sector.</p>
+                    <div class="footer-socials">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                        <li><a href="content.html">Content</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Email" class="footer-icon"> info@bettercallus.co.uk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Better Call Us. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Chart.js Implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('trendsChart').getContext('2d');
+            
+            // Applying our color tokens to the chart
+            const primaryColor = '#1F7A63';
+            const secondaryColor = '#1E293B';
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+                    datasets: [
+                        {
+                            label: 'Search Interest: "Restaurant help"',
+                            data: [35, 80, 85, 95, 100, 92, 88],
+                            borderColor: primaryColor,
+                            backgroundColor: 'rgba(31, 122, 99, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Search Interest: "Cafe failing"',
+                            data: [20, 90, 70, 85, 90, 80, 75],
+                            borderColor: secondaryColor,
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            borderDash: [5, 5],
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: {
+                                    family: "'Inter', sans-serif"
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

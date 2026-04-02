@@ -1,0 +1,127 @@
+/* Page Header Shared */
+.page-header {
+  padding: 160px 0 80px 0;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: var(--color-background);
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.25rem;
+  color: var(--color-border);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* About specifics */
+.about-overview h2 {
+  color: var(--color-primary);
+}
+
+.target-card .icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  filter: hue-rotate(120deg);
+}
+
+/* Persona Cards */
+.persona-card {
+  text-align: left;
+}
+
+.persona-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1.5rem;
+}
+
+.persona-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  padding: 10px;
+}
+
+.persona-header h3 {
+  margin-bottom: 0.25rem;
+}
+
+.persona-header .subtitle {
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* Competitor Table */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 3rem;
+}
+
+.competitor-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-background);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.competitor-table th,
+.competitor-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.competitor-table th {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: var(--font-heading);
+}
+
+.competitor-table td {
+  color: var(--color-text);
+}
+
+.competitor-table tr:last-child td {
+  border-bottom: none;
+}
+
+.usp-banner {
+  background-color: rgba(255,255,255,0.05);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.usp-banner h3 {
+  color: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
