@@ -1,0 +1,26 @@
+.reference-list {
+  font-family: var(--font-body);
+  color: var(--color-text-light);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.reference-list p {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.reference-list strong {
+  color: var(--color-secondary);
+}
+
+.max-w-lg {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.border-bottom-primary {
+  border-bottom: 2px solid var(--color-primary);
+}

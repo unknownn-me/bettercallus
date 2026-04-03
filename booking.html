@@ -14,21 +14,21 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">
+            <a href="index.html" class="nav-brand" aria-label="Better Call Us Home">
                 <img src="assets/images/logo2.png" alt="Better Call Us Logo" />
             </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="services.html">Services</a>
-                <a href="research.html">Research</a>
+                <a href="cases.html">Case Studies</a>
                 <a href="strategy.html">Strategy</a>
                 <a href="content.html">Content</a>
             </div>
-            <div class="burger-menu">
+            <div class="burger-menu" role="button" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
-            <a href="booking.html" class="btn btn-primary nav-cta">Book Consultation</a>
+            <a href="booking.html" class="btn btn-primary nav-cta" aria-label="Book a free consultation">Book Consultation</a>
         </div>
     </nav>
 
@@ -60,33 +60,33 @@
 
                 <!-- Right Form -->
                 <div class="booking-form-wrapper fade-in">
-                    <form class="booking-form" action="thanks.html" method="GET">
+                    <form class="booking-form" action="thanks.html" method="GET" aria-label="Consultation booking form">
                         <h3>Schedule Your Call</h3>
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" required>
+                                <input type="text" id="firstName" name="firstName" required aria-required="true" autocomplete="given-name">
                             </div>
                             <div class="form-group">
                                 <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" required>
+                                <input type="text" id="lastName" name="lastName" required aria-required="true" autocomplete="family-name">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
                         </div>
 
                         <div class="form-group">
                             <label for="businessName">Business Name & Location</label>
-                            <input type="text" id="businessName" name="businessName" placeholder="e.g. The Coffee House, Edinburgh" required>
+                            <input type="text" id="businessName" name="businessName" placeholder="e.g. The Coffee House, Edinburgh" required aria-required="true" autocomplete="organization">
                         </div>
 
                         <div class="form-group">
                             <label for="interest">Primary Challenge</label>
-                            <select id="interest" name="interest">
+                            <select id="interest" name="interest" aria-required="true">
                                 <option value="margins">Low Profit Margins</option>
                                 <option value="staff">Staff Retention/Training</option>
                                 <option value="operations">Messy Operations</option>
@@ -95,7 +95,7 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary form-submit mt-4">Confirm Booking</button>
+                        <button type="submit" class="btn btn-primary form-submit mt-4" aria-label="Confirm booking">Confirm Booking</button>
                         <p class="form-disclaimer text-center mt-2">By booking, you agree to our privacy policy. We will never share your data.</p>
                     </form>
                 </div>
@@ -112,34 +112,37 @@
                     <img src="assets/images/logo2.png" alt="Better Call Us Logo" class="footer-logo">
                     <p>Hands-on consultancy for Edinburgh & Glasgow's independent hospitality sector.</p>
                     <div class="footer-socials">
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"></a>
+                        <a href="#" aria-label="Visit our Facebook page"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Visit our Instagram page"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+                        <a href="#" aria-label="Visit our LinkedIn page"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"></a>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Pages</h4>
+                    <h4>Pages & Research</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="research.html">Research</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="research.html">Market Research</a></li>
                         <li><a href="strategy.html">Strategy</a></li>
                         <li><a href="content.html">Content</a></li>
+                        <li><a href="cases.html">Case Studies</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p><img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Email" class="footer-icon"> info@bettercallus.co.uk</p>
+                    <p><img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="" class="footer-icon" aria-hidden="true"> info@bettercallus.co.uk</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Better Call Us. All rights reserved.</p>
                 <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">Accessibility</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="privacy.html">Terms of Service</a>
+                    <a href="privacy.html">Cookie Policy</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="references.html">References</a>
                 </div>
             </div>
         </div>
